@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(42, 47, 52);
+    color: whitesmoke
+}
+
+#players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#players > a {
+    margin: 2rem;
+    padding: 1rem;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    width: calc((100% / 4) - 4rem);
+    text-align: center;
+}
