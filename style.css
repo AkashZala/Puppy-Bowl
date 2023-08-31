@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 #players > a {
@@ -20,4 +19,8 @@ body {
     border: 1px solid whitesmoke;
     width: calc((100% / 4) - 4rem);
     text-align: center;
+}
+
+a.hover {
+    background-color: dodgerblue;
 }
