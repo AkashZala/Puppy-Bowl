@@ -52,7 +52,6 @@ async function renderPlayer() {
         `
     display.innerHTML = selectHtml;
     intro.innerHTML = '';
-    console.log(state.player)
 }
 
 async function render() {
