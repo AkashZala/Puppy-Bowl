@@ -23,7 +23,7 @@ function renderPlayerList() {
         `
     }).join('');
     display.innerHTML = allPlayers;
-    intro.innerHTML = 'Click A Puppy For More Information:';
+    intro.innerHTML = 'Click A Player Puppy For More Information:';
 }
 
 window.addEventListener('hashchange', () => {
