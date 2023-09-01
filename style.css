@@ -51,7 +51,9 @@ body>h1 {
 }
 
 #intro {
-    padding-left: 2rem
+    color: #1b3b46;
+    padding-left: 2rem;
+    text-shadow: 1px 1px 2px whitesmoke;
 }
 
 #back {
@@ -78,8 +80,8 @@ body>h1 {
 }
 
 #selectContainer {
-    height: 90vh;
-    width: 75vw;
+    height: fit-content;
+    width: auto;
     margin: 2rem;
     padding: 2rem;
     border: 3px solid #4a8686;
@@ -90,8 +92,8 @@ body>h1 {
 }
 
 #selectContainer>img {
-    height: 80%;
-    width: auto;
+    height: auto;
+    width: 70%;
     border: 2px solid white;
     box-shadow: 1px 1px 5px white;
 }
@@ -109,14 +111,13 @@ body>h1 {
     }
 
     #selectContainer {
-        height: 70vh;
         margin-right: 3rem;
-        padding: 0;
+        padding: 2rem;
     }
 
     #selectContainer>img {
-        height: 70%;
-        width: auto;
+        height: auto;
+        width: 95%;
     }
 }
 
@@ -135,7 +136,6 @@ body>h1 {
     }
 
     #selectContainer {
-        height: 75vh;
         margin-right: 3rem;
         padding: 1rem;
         padding-bottom: 2rem;
@@ -152,7 +152,8 @@ body>h1 {
         top: 160px;
     }
 
-    #selectContainer {
-        height: 60vh;
+    #intro {
+        padding-right: 1rem;
     }
+
 }
