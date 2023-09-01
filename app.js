@@ -1,5 +1,5 @@
-const players = document.getElementById('players');
-const selected = document.getElementById('select');
+const display = document.querySelector('.display');
+const intro = document.getElementById('intro');
 
 let playerList = {};
 
@@ -15,30 +15,28 @@ function renderPlayers() {
     const allPlayers = playerList.map((player) => {
         return `
             <a href='#${player.id}'>
-            <p>${player.name}</p>
+            <h2>${player.name}</h2>
             <p>${player.breed}</p>
             </a>
         `
     }).join('');
-    players.innerHTML = allPlayers;
+    display.innerHTML = allPlayers;
+    intro.innerHTML = 'Click A Puppy For More Information:';
 
     const selectPlayer = playerList.find(player => player.id === hash);
 
     if (selectPlayer) {
         let selectHtml = `
-        <a href=#>go back</a>
-        <div>
-        <p>${selectPlayer.name}</p>
-        <p>${selectPlayer.id}</p>
-        <p>${selectPlayer.breed}</p>
-        <p>${selectPlayer.status}</p>
+        <a id="back" href=#> < All Puppies</a>
+        <div id=selectContainer>
+        <h1>${selectPlayer.name}</h1>
+        <p>Breed: ${selectPlayer.breed}</p>
+        <h2>Status: Currently on the ${selectPlayer.status}</h2>
         <img src='${selectPlayer.imageUrl}'/>
         </div>
         `
-        selected.innerHTML = selectHtml;
-        players.innerHTML = '';
-    } else {
-        selected.innerHTML = 'Choose a player for more information';
+        display.innerHTML = selectHtml;
+        intro.innerHTML = '';
     }
 }
 
