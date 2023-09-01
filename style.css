@@ -86,9 +86,8 @@ body>h1 {
 #selectContainer {
     height: fit-content;
     width: auto;
-    margin: 2rem;
-    padding: 2rem;
-    padding-bottom: 3rem;
+    margin: 2rem 10rem 3rem 10rem;
+    padding: 2rem 2rem 3rem 2rem;
     border: 3px solid #4a8686;
     background-color: #1b3b46;
     text-align: center;
@@ -108,7 +107,12 @@ body>h1 {
         height: auto;
         width: 80%;
     }
+
+    #selectContainer {
+        margin: 2rem 7rem 3rem 7rem;
+    }
 }
+
 @media (max-width: 700px) {
 
     .display>a {
@@ -122,8 +126,8 @@ body>h1 {
     }
 
     #selectContainer {
-        margin-right: 3rem;
         padding: 2rem;
+        margin: 2rem 5rem 3rem 5rem;
     }
 
     #selectContainer>img {
@@ -147,7 +151,7 @@ body>h1 {
     }
 
     #selectContainer {
-        margin-right: 3rem;
+        margin: 2rem 2rem 3rem 2rem;
         padding: 1rem;
         padding-bottom: 2rem;
     }
