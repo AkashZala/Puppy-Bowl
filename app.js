@@ -1,4 +1,5 @@
 const display = document.querySelector('.display');
+const displayOne = document.querySelector('.displayOne');
 const intro = document.getElementById('intro');
 
 const state = {
@@ -24,6 +25,7 @@ function renderPlayerList() {
     }).join('');
     display.innerHTML = allPlayers;
     intro.innerHTML = 'Click A Player Puppy For More Information:';
+    displayOne.innerHTML = '';
 }
 
 window.addEventListener('hashchange', () => {
@@ -50,8 +52,11 @@ async function renderPlayer() {
         <img src='${state.player.imageUrl}'/>
         </div>
         `
-    display.innerHTML = selectHtml;
+    displayOne.innerHTML = selectHtml;
+    display.innerHTML = '';
     intro.innerHTML = '';
+
+
 }
 
 async function render() {
