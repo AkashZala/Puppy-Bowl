@@ -29,7 +29,7 @@ function renderPlayerList() {
 }
 
 window.addEventListener('hashchange', () => {
-    render();
+    displayCards();
 });
 
 function getHash() {
@@ -55,18 +55,20 @@ async function renderPlayer() {
     displayOne.innerHTML = selectHtml;
     display.innerHTML = '';
     intro.innerHTML = '';
-
-
 }
 
-async function render() {
-    await getPlayerList();
+function displayCards() {
     getHash();
     if (state.player) {
         renderPlayer();
     } else {
         renderPlayerList();
     }
+}
+
+async function render() {
+    await getPlayerList();
+    displayCards();
 }
 
 render();
